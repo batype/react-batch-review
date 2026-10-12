@@ -1,0 +1,8 @@
+node_modules/
+dist/
+lib/
+*.tgz
+.DS_Store
+.kiro/
+demo.html
+*.npmrc
