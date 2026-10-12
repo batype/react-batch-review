@@ -12,7 +12,7 @@
 
 ## 体验演示
 
-直接用现代浏览器打开根目录的 `demo.html`。这是自包含页面，包含脚本、样式和预置数据，不需要服务器、登录或 API Key。
+打开[在线演示](https://batype.github.io/react-batch-review/)即可体验。运行 `npm run build` 后，也可用现代浏览器打开生成的 `demo.html`；这个自包含页面包含脚本、样式和预置数据，不需要登录或 API Key。
 
 开发预览需要 Node.js 22.12+：
 

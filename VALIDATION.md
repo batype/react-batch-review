@@ -33,4 +33,13 @@
 - 浏览器工具禁止导航到 file://，因此没有通过该工具验证直接双击 `demo.html` 的文件协议运行；已验证同一 React 实现在本地 HTTP 环境中的交互，并对单文件产物进行资源内嵌和 JavaScript 语法检查。
 - 本次使用 React 19；React 18 声明为兼容 peer 范围，但尚未单独跑版本矩阵。
 - 未进行大型数据集性能基准、真实业务提交、独立无障碍审计或完整跨浏览器测试。
-- GitHub Actions 配置已提供，但尚未推送到 GitHub 执行。没有创建仓库或发布 npm 包。
+
+
+## GitHub 与发布检查
+
+- 公开仓库：`https://github.com/batype/react-batch-review`。
+- scoped 包名：`@batype/react-batch-review`，版本 `0.1.0`；包名、锁文件、安装说明、Demo 导入示例已同步。
+- GitHub Check 工作流已执行，29 项测试和完整构建通过。
+- Pages 已开启 Actions 部署，公开站点 `https://batype.github.io/react-batch-review/` 返回 HTTP 200；浏览器成功加载页面，筛选 3 项异常并批量拒绝后显示 97 项待审核，error/warn 日志为空。
+- scoped 安装包包含 11 个文件，约 18.4 kB；在独立消费项目安装后，公开 exports 导入和 React 服务端渲染通过。
+- npm 首次发布被 registry 的双重验证要求阻止，等待账号完成 2FA 后重试；尚未确认 npm 发布成功。
