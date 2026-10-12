@@ -6,7 +6,7 @@
 
 当前版本：v0.1.0。
 
-[在线演示](https://batype.github.io/react-batch-review/) · [GitHub](https://github.com/batype/react-batch-review) · [问题反馈](https://github.com/batype/react-batch-review/issues)
+[在线演示](https://batype.github.io/react-batch-review/) · [npm](https://www.npmjs.com/package/@batype/react-batch-review) · [GitHub](https://github.com/batype/react-batch-review) · [问题反馈](https://github.com/batype/react-batch-review/issues)
 
 ![变更审核工作台](https://raw.githubusercontent.com/batype/react-batch-review/main/docs/preview.jpg)
 

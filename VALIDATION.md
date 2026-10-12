@@ -42,4 +42,4 @@
 - GitHub Check 工作流已执行，29 项测试和完整构建通过。
 - Pages 已开启 Actions 部署，公开站点 `https://batype.github.io/react-batch-review/` 返回 HTTP 200；浏览器成功加载页面，筛选 3 项异常并批量拒绝后显示 97 项待审核，error/warn 日志为空。
 - scoped 安装包包含 11 个文件，约 18.4 kB；在独立消费项目安装后，公开 exports 导入和 React 服务端渲染通过。
-- npm 首次发布被 registry 的双重验证要求阻止，等待账号完成 2FA 后重试；尚未确认 npm 发布成功。
+- 完成 npm 2FA 后，`npm publish` 成功返回 `+ @batype/react-batch-review@0.1.0`。registry 提示新包正在处理中，等待公开版本与安装验证。
