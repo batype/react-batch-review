@@ -21,7 +21,7 @@ function DocsDialog({ onClose }: { onClose: () => void }) {
     <p>传入原始数据和提议操作，审核逻辑交给组件，提交方式由你的应用决定。</p>
     <div className="docs-code-top"><span>React + TypeScript</span><button onClick={copy}><Icon name="copy" size={13} />{copyState}</button></div>
     <pre tabIndex={0}>{integrationCode}</pre>
-    <p className="docs-note">查看仓库 README 获取完整接入说明。也可在项目目录运行 npm run build 后使用 npm pack 生成本地安装包。<a href="https://github.com/batype/react-batch-review" target="_blank" rel="noreferrer">打开 GitHub 仓库 →</a></p>
+    <p className="docs-note">安装：npm install @batype/react-batch-review。查看仓库 README 获取完整接入说明。<a href="https://github.com/batype/react-batch-review" target="_blank" rel="noreferrer">打开 GitHub 仓库 →</a></p>
   </dialog>;
 }
 

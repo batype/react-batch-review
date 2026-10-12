@@ -1,4 +1,4 @@
-# react-batch-review
+# @batype/react-batch-review
 
 **批量修改，先审再提交。**
 
@@ -39,18 +39,11 @@ npm run dev
 
 ## 在另一个项目中安装
 
-先构建并生成本地包：
-
 ```sh
-npm run build
-npm pack --ignore-scripts
+npm install @batype/react-batch-review
 ```
 
-然后在目标项目安装生成的 `react-batch-review-0.1.0.tgz`：
-
-```sh
-npm install /absolute/path/to/react-batch-review-0.1.0.tgz
-```
+如需从源码生成本地包，运行 `npm run build` 和 `npm pack --ignore-scripts`，再安装生成的 `batype-react-batch-review-0.1.0.tgz`。
 
 安装包包含 ESM 构建、TypeScript 声明和独立样式。组件的运行时 peer dependency 为 React 18 或 19；本次演示和浏览器验证使用 React 19。
 
@@ -59,9 +52,9 @@ npm install /absolute/path/to/react-batch-review-0.1.0.tgz
 ```tsx
 'use client';
 
-import { BatchReview } from 'react-batch-review';
-import type { Proposal, ReviewColumn } from 'react-batch-review';
-import 'react-batch-review/style.css';
+import { BatchReview } from '@batype/react-batch-review';
+import type { Proposal, ReviewColumn } from '@batype/react-batch-review';
+import '@batype/react-batch-review/style.css';
 
 type Product = { id: string; name: string; price: number; stock: number };
 
@@ -117,7 +110,7 @@ type Proposal<T extends { id: string }> =
 ## 自定义异常规则
 
 ```tsx
-import type { ReviewRule } from 'react-batch-review';
+import type { ReviewRule } from '@batype/react-batch-review';
 
 const rules: ReviewRule<Product>[] = [{
   id: 'price-swing',

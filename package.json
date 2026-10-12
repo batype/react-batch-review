@@ -1,23 +1,40 @@
 {
-  "name": "react-batch-review",
+  "name": "@batype/react-batch-review",
   "version": "0.1.0",
   "description": "Review bulk data changes before they go live. Headless logic and accessible React components.",
   "type": "module",
   "license": "MIT",
   "author": "batype",
-  "repository": { "type": "git", "url": "git+https://github.com/batype/react-batch-review.git" },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/batype/react-batch-review.git"
+  },
   "homepage": "https://batype.github.io/react-batch-review/",
-  "bugs": { "url": "https://github.com/batype/react-batch-review/issues" },
-  "publishConfig": { "access": "public", "registry": "https://registry.npmjs.org/" },
-  "files": ["lib", "README.md", "LICENSE"],
+  "bugs": {
+    "url": "https://github.com/batype/react-batch-review/issues"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "files": [
+    "lib",
+    "README.md",
+    "LICENSE"
+  ],
   "main": "./lib/index.js",
   "module": "./lib/index.js",
   "types": "./lib/index.d.ts",
   "exports": {
-    ".": { "types": "./lib/index.d.ts", "import": "./lib/index.js" },
+    ".": {
+      "types": "./lib/index.d.ts",
+      "import": "./lib/index.js"
+    },
     "./style.css": "./lib/style.css"
   },
-  "sideEffects": ["**/*.css"],
+  "sideEffects": [
+    "**/*.css"
+  ],
   "scripts": {
     "dev": "vite --host 127.0.0.1",
     "typecheck": "tsc --noEmit",
@@ -26,7 +43,9 @@
     "preview": "vite preview --host 127.0.0.1",
     "prepack": "npm run build"
   },
-  "peerDependencies": { "react": ">=18.0.0 <20.0.0" },
+  "peerDependencies": {
+    "react": ">=18.0.0 <20.0.0"
+  },
   "devDependencies": {
     "@types/node": "^24.7.2",
     "@types/react": "^19.2.2",
@@ -37,5 +56,12 @@
     "typescript": "^5.9.3",
     "vite": "^7.1.9"
   },
-  "keywords": ["react", "diff", "review", "bulk-edit", "human-in-the-loop", "typescript"]
+  "keywords": [
+    "react",
+    "diff",
+    "review",
+    "bulk-edit",
+    "human-in-the-loop",
+    "typescript"
+  ]
 }

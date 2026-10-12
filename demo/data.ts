@@ -56,8 +56,8 @@ export const labels: Partial<ReviewLabels> = {
   exportSummary: accepted => `仅导出你批准的 ${accepted} 项操作。待审核和已拒绝的操作不会进入清单；不会执行任何数据修改。`,
   bulkLabel: (action, count) => `${action} ${count} 项`,
 };
-export const integrationCode = `import { BatchReview } from 'react-batch-review';
-import 'react-batch-review/style.css';
+export const integrationCode = `import { BatchReview } from '@batype/react-batch-review';
+import '@batype/react-batch-review/style.css';
 
 <BatchReview
   base={products}
