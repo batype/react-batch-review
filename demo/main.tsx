@@ -5,6 +5,7 @@ import type { ReviewStatus } from '../src';
 import { Icon } from '../src/Icon';
 import type { IconName } from '../src/Icon';
 import { columns, integrationCode, labels, mixedProposals, pricingProposals, products, rules } from './data';
+import '../src/style.css';
 import './style.css';
 
 function DocsDialog({ onClose }: { onClose: () => void }) {
