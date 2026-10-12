@@ -42,4 +42,6 @@
 - GitHub Check 工作流已执行，29 项测试和完整构建通过。
 - Pages 已开启 Actions 部署，公开站点 `https://batype.github.io/react-batch-review/` 返回 HTTP 200；浏览器成功加载页面，筛选 3 项异常并批量拒绝后显示 97 项待审核，error/warn 日志为空。
 - scoped 安装包包含 11 个文件，约 18.4 kB；在独立消费项目安装后，公开 exports 导入和 React 服务端渲染通过。
-- 完成 npm 2FA 后，`npm publish` 成功返回 `+ @batype/react-batch-review@0.1.0`。registry 提示新包正在处理中，等待公开版本与安装验证。
+- npm 正式版本 `@batype/react-batch-review@0.1.0` 已公开，`latest` 指向 `0.1.0`。公共 registry 返回的 SHA-1 `5c067e2ba4623ee842ef17768831204538eadec2` 与已审查安装包一致。
+
+- 从官方 registry 使用默认 `latest` 在新的独立项目安装成功，实际版本为 `0.1.0`；组件和纯函数公开导入、CSS 子路径解析、React 服务端渲染均通过。
